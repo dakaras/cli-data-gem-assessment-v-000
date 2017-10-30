@@ -1,5 +1,2 @@
-require "stock_screener/version"
-
-module StockScreener
-  # Your code goes here...
-end
+require_relative "stock_screener/version"
+require_relative "./stock_screener/cli"
