@@ -5,6 +5,7 @@ class StockScreener::CLI
     puts "Gold Miner Quotes For Today's Market Session:"
     list_quotes
     menu
+    goodbye
   end
 
   def list_quotes
@@ -27,4 +28,7 @@ class StockScreener::CLI
     end
   end
 
+  def goodbye
+    puts "Thank you for checking quotes for the gold miners using our app!" 
+  end
 end
