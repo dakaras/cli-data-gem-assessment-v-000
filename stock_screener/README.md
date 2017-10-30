@@ -1,5 +1,5 @@
 # StockScreener
-This is a CLI gem that will enable the user to access a list of stocks in the gold mining industry and seek more detailed investor info on demand. 
+This is a CLI gem that will enable the user to access a list of stocks in the gold mining industry and seek more detailed investor info on demand.
 
 ## Installation
 
@@ -19,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Write usage instructions here
 
 ## Development
 
