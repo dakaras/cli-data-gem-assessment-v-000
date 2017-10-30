@@ -14,14 +14,17 @@ class StockScreener::CLI
   end
 
   def menu
-    puts "Enter the number of the quote you would like more data on."
-    input = gets.strip
-
-    case input
-    when "1"
-      puts "MARKET CAP:   DIVIDEND:    P/E:   ROE:    ROA:    NET PROFIT MARGIN:    PERF YTD: "
-    when "2"
-      puts "MARKET CAP:   DIVIDEND:    P/E:   ROE:    ROA:    NET PROFIT MARGIN:    PERF YTD: "
+    puts "Enter the number of the quote you would like more data on. Type exit to finish."
+    input = nil
+    while input != "exit"
+      input = gets.strip.downcase
+      case input
+      when "1"
+        puts "MARKET CAP:   DIVIDEND:    P/E:   ROE:    ROA:    NET PROFIT MARGIN:    PERF YTD: "
+      when "2"
+        puts "MARKET CAP:   DIVIDEND:    P/E:   ROE:    ROA:    NET PROFIT MARGIN:    PERF YTD: "
+      end
     end
   end
+
 end
