@@ -1,4 +1,4 @@
- 
+
 How to build a CLI Gem
 
 1. Plan your gem, imagine your interface.
@@ -17,3 +17,12 @@ show a list of stocks in an index
 2. ticker - name - price - volume
 what stock would you like more info on?
 1
+
+What is a quote?
+A quote has:
+a ticker
+a name
+a price
+a percent change
+a volume
+a url 
