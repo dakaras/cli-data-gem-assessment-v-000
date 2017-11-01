@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
+
 require "bundler/setup"
-require "./lib/stock_screener"
+require "./lib/stock_screener/quote"
+require "./lib/stock_screener/cli"
 
 StockScreener::CLI.new.call

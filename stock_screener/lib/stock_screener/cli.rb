@@ -8,10 +8,10 @@ class StockScreener::CLI
 
   def list_quotes
     puts "Gold Miner Quotes For Today's Market Session:"
-    puts <<-DOC.gsub /^\s+/, ""
-    1. TICKER:  NEM  NAME:  Newmont Mining  PRICE:  $36.23  CHANGE: 1.20%  VOLUME: 1,807,123
-    DOC
     @quotes = StockScreener::Quote.session
+    @quotes.each.with_index(1) do |quote, i|
+      puts "#{i}." "#{quote}"
+    end
   end
 
 
@@ -23,7 +23,7 @@ class StockScreener::CLI
     while input != "exit"
       input = gets.strip.downcase
       if input.to_i > 0
-        puts @quotes[input.to_i-1]
+        @quotes[input.to_i-1]
       elsif input == "list"
         list_quotes
       else
