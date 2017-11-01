@@ -10,7 +10,7 @@ class StockScreener::CLI
     puts "Gold Miner Quotes For Today's Market Session:"
     @quotes = StockScreener::Quote.session
     @quotes.each.with_index(1) do |quote, i|
-      puts "#{i}." "#{quote}"
+      puts "#{i}." "#{quote.ticker}"  "#{quote.name}" "#{quote.price}"  "#{quote.change}" "#{quote.volume}"
     end
   end
 
