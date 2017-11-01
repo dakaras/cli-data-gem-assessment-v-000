@@ -11,7 +11,7 @@ class StockScreener::CLI
     puts <<-DOC.gsub /^\s+/, ""
     1. TICKER:  NEM  NAME:  Newmont Mining  PRICE:  $36.23  CHANGE: 1.20%  VOLUME: 1,807,123
     DOC
-    @quotes = StockScreener::Quote.today
+    @quotes = StockScreener::Quote.session
   end
 
 
@@ -22,12 +22,9 @@ class StockScreener::CLI
     input = nil
     while input != "exit"
       input = gets.strip.downcase
-      case input
-      when "1"
-        puts "MARKET CAP:   DIVIDEND:    P/E:   ROE:    ROA:    NET PROFIT MARGIN:    PERF YTD: "
-      when "2"
-        puts "MARKET CAP:   DIVIDEND:    P/E:   ROE:    ROA:    NET PROFIT MARGIN:    PERF YTD: "
-      when "list"
+      if input.to_i > 0
+        puts @quotes[input.to_i-1]
+      elsif input == "list"
         list_quotes
       else
         puts "Please type list for the quotes or exit to finish."
