@@ -13,16 +13,7 @@ How to build a CLI Gem
 user types stock screen
 
 show a list of stocks in an index
-1. ticker - name - price - volume
-2. ticker - name - price - volume
+1. ticker - name - price - change - volume
+2. ticker - name - price - change - volume
 what stock would you like more info on?
 1
-
-What is a quote?
-A quote has:
-a ticker
-a name
-a price
-a percent change
-a volume
-a url 
