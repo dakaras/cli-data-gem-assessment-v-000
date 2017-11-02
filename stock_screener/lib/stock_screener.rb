@@ -1,4 +1,5 @@
-require 'nokogiri'
-require 'open-uri'
-require "pry"
-require_relative "stock_screener/version"
+require "stock_screener/version"
+
+module StockScreener
+  # Your code goes here...
+end
