@@ -26,6 +26,9 @@ class StockScreener::CLI
         @quotes[input.to_i-1]
       elsif input == "list"
         list_quotes
+      elsif "exit"
+        goodbye
+        break
       else
         puts "Please type list for the quotes or exit to finish."
       end
