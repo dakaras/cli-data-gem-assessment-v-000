@@ -1,5 +1,8 @@
-require "stock_screener/version"
+# this will be my enivornment ruby file
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module StockScreener
-  # Your code goes here...
-end
+require_relative './stock_screener/version'
+require_relative './stock_screener/quote'
+require_relative './stock_screener/cli'

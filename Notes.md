@@ -1,7 +1,6 @@
 
 How to build a CLI Gem
 
-<<<<<<< HEAD
 [X] 1. Plan your gem, imagine your interface.
 [X] 2. Start with your project structure using Google.
 [X] 3. Start with the entry point - the file run.
@@ -10,16 +9,7 @@ How to build a CLI Gem
 [X] 6. Start making things real.
 [X] 7. Discover objects.
 [X] 8. Program!!
-=======
-- [x] 1. Plan your gem, imagine your interface.
-- [X] 2. Start with your project structure using Google.
-- [ ] 3. Start with the entry point - the file run.
-- [ ] 4. Force that to build the CLI Interface.
-- [ ] 5. Stub out the interface.
-- [ ] 6. Start making things real.
-- [ ] 7. Discover objects.
-- [ ] 8. Program!!
->>>>>>> 6384360f0668772bb836521852f53d060579f780
+
 
 user types stock screen
 

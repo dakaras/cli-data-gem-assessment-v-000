@@ -40,5 +40,3 @@ class StockScreener::CLI
     puts "Thank you for checking gold miner quotes using our app!"
   end
 end
-=======
->>>>>>> 6384360f0668772bb836521852f53d060579f780
